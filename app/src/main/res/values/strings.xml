@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voso</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="grid_video_poster">Video Poster</string>
+    <string name="search_using_voice">Voso</string>
+    <string name="unable_to_reach_server">Unable to reach server</string>
+</resources>

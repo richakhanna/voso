@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/ll_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="230dp"
+            android:layout_gravity="top|left"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/grid_video_poster"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:minLines="2"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/text_normal_black"
+                tools:text="Title" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/ib_similar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/similar"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/margin_micro"
+        android:layout_gravity="bottom|end"/>
+
+</android.support.v7.widget.CardView>
